@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanceair Brasil | MRO Aeronáutico Premium</title>
+    <meta name="description"
+        content="Centro homologado ANAC e EASA para manutenção, reparo e revisão de aeronaves Lanceair no Brasil. AOG 24/7. Starter Generator, Baterias, NDT.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lanceair Brasil MRO | Manutenção Aeronáutica ANAC/EASA">
+    <meta property="og:description"
+        content="Centro homologado ANAC e EASA para manutenção, reparo e revisão de aeronaves Lanceair no Brasil. AOG 24/7.">
+    <meta property="og:image"
+        content="https://lanceairbrasilmro.com/assets/estrutura/estrutura-fachada-lanceair-brasil-1200w.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://lanceairbrasilmro.com">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lanceair Brasil MRO | Manutenção Aeronáutica ANAC/EASA">
+    <meta name="twitter:description"
+        content="Centro homologado ANAC e EASA para manutenção e revisão de aeronaves Lanceair no Brasil.">
+    <meta name="twitter:image"
+        content="https://lanceairbrasilmro.com/assets/estrutura/estrutura-fachada-lanceair-brasil-1200w.webp">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Lanceair Brasil MRO",
+      "description": "Manutenção e revisão de aeronaves Lanceair homologada ANAC/EASA",
+      "url": "https://lanceairbrasilmro.com",
+      "telephone": "+55-11-99584-9038",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR",
+        "addressLocality": "São Paulo"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços MRO",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Starter Generator — Thales Authorized Center"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Baterias Aeronáuticas Ni-Cd / Lead-Acid"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ensaios NDT — ISO 9712 / NAS410"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Acessórios Mecânicos"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Componentes Eletrônicos Aviônicos"}}
+        ]
+      }
+    }
+    </script>
+    <meta name="theme-color" content="#0A0E1A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/%3A-.—()%C3%97">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Loader Minimalista -->
+    <div id="loader">
+        <div class="loader-content logo">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-plane-up"/></svg> LANCEAIR <span style="margin-left:8px;">BRASIL</span>
+        </div>
+    </div>
+
+    <!-- Header (Sticky, Blur at 80px) -->
+    <header id="header">
+        <a href="#" class="logo">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-plane-up"/></svg> LANCEAIR <span>BRASIL</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Capacidades</a></li>
+                <li><a href="#certifications">Certificações</a></li>
+                <li><a href="#structure">Infraestrutura</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <span class="mono-text cert-header-text">ANAC 200601-05 | EASA 145.0924</span>
+            <a href="#contact" class="btn btn-secondary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Solicitar
+                Orçamento</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="padding:0; margin:0; max-width:100%;">
+        <img src="assets/estrutura/estrutura-fachada-lanceair-brasil.webp"
+            srcset="assets/estrutura/estrutura-fachada-lanceair-brasil-400w.webp 400w, assets/estrutura/estrutura-fachada-lanceair-brasil-800w.webp 800w, assets/estrutura/estrutura-fachada-lanceair-brasil-1200w.webp 1200w"
+            sizes="100vw" alt="" class="hero-bg" role="presentation" fetchpriority="high" width="1200" height="800"
+            style="aspect-ratio: 3/2;">
+        <div class="hero-overlay"></div> <!-- Gradient Navy/Black 65% transparency in CSS -->
+        <div class="hero-content active">
+            <h1 style="text-shadow: 0 4px 15px rgba(0,0,0,0.6);">Excelência Técnica em <br><span>Manutenção
+                    Aeronáutica</span></h1>
+            <p style="text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #F4F6F9;">Mais de 25 anos assegurando máxima
+                confiabilidade técnica com certificações ANAC e EASA para sua frota de
+                asa fixa e rotativa.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+                <a href="#services" class="btn btn-secondary">Conheça a Estrutura <svg class="icon bounce-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg></a>
+            </div>
+            <p class="hero-microcopy">Resposta em até 2 horas úteis • Atendimento AOG 24/7</p>
+        </div>
+    </section>
+
+    <!-- Capabilities / Bento Grid -->
+    <section id="services" class="active">
+        <div class="section-title reveal">
+            <span class="mono-text">Capacidades MRO</span>
+            <h2>Nossos Serviços</h2>
+        </div>
+        <div class="bento-grid">
+            <!-- Main Service: Double Column -->
+            <div class="bento-card large reveal"
+                style="transition-delay: 0.1s; background-image: linear-gradient(rgba(10,14,26,0.8), rgba(10,14,26,0.8)), url('assets/estrutura/estrutura-lab-starter-generator.webp'); background-size: cover; background-position: center;">
+                <div class="bento-tag mono-text">THALES AUTHORIZED CENTER</div>
+                <div class="bento-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-charging-station"/></svg></div>
+                <h3>Starter Generator</h3>
+                <p>Reparos e revisões completas em nosso centro de serviço autorizado com tecnologia de ponta. Ensaios
+                    em bancadas simuladas com telemetria exata para garantir o mais alto padrão de confiabilidade em
+                    voo.</p>
+            </div>
+
+            <div class="bento-card reveal"
+                style="transition-delay: 0.2s; background-image: linear-gradient(rgba(10,14,26,0.85), rgba(10,14,26,0.85)), url('assets/estrutura/estrutura-laboratorio-baterias.webp'); background-size: cover; background-position: center;">
+                <div class="bento-tag mono-text">Ni-Cd / Lead-Acid</div>
+                <div class="bento-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-battery-full"/></svg></div>
+                <h3>Baterias Aeronáuticas</h3>
+                <p>Manutenção preventiva e corretiva com processos térmicos e químicos rigorosos.</p>
+            </div>
+
+            <div class="bento-card reveal"
+                style="transition-delay: 0.3s; background-image: linear-gradient(rgba(10,14,26,0.85), rgba(10,14,26,0.85)), url('assets/estrutura/estrutura-ensaios-ndt.webp'); background-size: cover; background-position: center;">
+                <div class="bento-tag mono-text">ISO 9712 / NAS410</div>
+                <div class="bento-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-microscope"/></svg></div>
+                <h3>Ensaios NDT</h3>
+                <p>Inspeções profundas por Líquido Penetrante, Partícula Magnética, Eddy Current e Ultrassom.</p>
+            </div>
+
+            <div class="bento-card reveal"
+                style="transition-delay: 0.4s; background-image: linear-gradient(rgba(10,14,26,0.85), rgba(10,14,26,0.85)), url('assets/estrutura/estrutura-componentes-mecanicos.webp'); background-size: cover; background-position: center;">
+                <div class="bento-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-cogs"/></svg></div>
+                <h3>Acessórios Mecânicos</h3>
+                <p>Serviços mecânicos detalhados em sistemas pneumáticos, hidráulicos estruturais e de combustível.</p>
+            </div>
+
+            <div class="bento-card reveal"
+                style="transition-delay: 0.5s; background-image: linear-gradient(rgba(10,14,26,0.85), rgba(10,14,26,0.85)), url('assets/estrutura/estrutura-bancada-testes-avionica.webp'); background-size: cover; background-position: center;">
+                <div class="bento-icon"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-fighter-jet"/></svg></div>
+                <h3>Componentes Eletrônicos</h3>
+                <p>Diagnóstico de alta fidelidade e reparo de placas aviônicas utilizando instrumentação digital
+                    avançada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROVAS SOCIAIS ═══ -->
+    <section id="social-proof">
+        <!-- Sub-bloco A: Contadores Animados -->
+        <div class="stats-row active">
+            <div class="stat-item">
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-suffix">+</span>
+                <p class="stat-label">Anos de Atuação</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="200">0</span>
+                <span class="stat-suffix">+</span>
+                <p class="stat-label">Obras Concluídas</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number mono-text" style="font-size: 1.5rem; margin-top: 1rem;">ANAC + EASA</span>
+                <p class="stat-label">Homologado</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number mono-text" style="font-size: 1.5rem; margin-top: 1rem;">AOG 24/7</span>
+                <p class="stat-label">365 Dias</p>
+            </div>
+        </div>
+
+        <!-- Sub-bloco B: Depoimentos -->
+        <div class="testimonials-wrapper reveal">
+            <div class="section-title" style="margin-bottom: 2rem;">
+                <span class="mono-text">Confiança Comprovada</span>
+                <h2>O Que Dizem Nossos Clientes</h2>
+            </div>
+            <div class="testimonials-carousel" id="testimonialCarousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-quote">“</div>
+                    <p>Atendimento excepcional e prazo cumprido à risca. A equipe resolveu nosso AOG em menos de 48
+                        horas com peças originais.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">CM</div>
+                        <div class="author-details">
+                            <strong>Carlos M.</strong>
+                            <span class="mono-text">Lanceair Legacy — SBBH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“</div>
+                    <p>Confio na Lanceair Brasil há mais de 8 anos para toda a manutenção da minha aeronave.
+                        Profissionalismo impecável.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">RS</div>
+                        <div class="author-details">
+                            <strong>Roberto S.</strong>
+                            <span class="mono-text">Lanceair IV-P — SDCO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“</div>
+                    <p>A revisão do starter generator ficou perfeita. Telemetria de bancada enviada em tempo real
+                        durante o ensaio. Referência.</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AL</div>
+                        <div class="author-details">
+                            <strong>André L.</strong>
+                            <span class="mono-text">Lanceair ES — SBJD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parceiros - Infinite Slider -->
+    <div class="partners-wrapper">
+        <p class="mono-text"
+            style="color: var(--text-dim); text-align: center; margin-bottom: 2rem; font-size: var(--caption);">MRO
+            APPROVED VENDORS & CAPABILITY</p>
+        <div class="partners-track" style="align-items: center;">
+            <div class="partner-logo"><svg viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+                    <path
+                        d="M10,25 C15,25 20,20 20,15 C20,10 15,5 10,5 C5,5 0,10 0,15 C0,20 5,25 10,25 Z M30,5 L30,25 L35,25 L35,5 L30,5 Z M45,5 L45,25 L50,25 L50,15 L60,15 L60,25 L65,25 L65,5 L60,5 L60,10 L50,10 L50,5 L45,5 Z M75,5 C80,5 85,10 85,15 C85,20 80,25 75,25 C70,25 65,20 65,15 L65,5 L70,5 L70,15 C70,18 72,20 75,20 C78,20 80,18 80,15 L80,5 L85,5 Z M95,5 L95,25 L100,25 L100,5 L95,5 Z" />
+                </svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 100 25" width="100" height="25" fill="currentColor"><text x="0"
+                        y="20" font-family="'Arial Black', sans-serif" font-size="22" font-weight="900"
+                        letter-spacing="1">THALES</text></svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 120 30" width="120" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="18" font-weight="800">HONEYWELL</text>
+                    <path d="M110,6 L118,6 L114,12 Z" fill="#D31245" />
+                </svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 150 30" width="150" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="17" font-weight="bold"
+                        letter-spacing="1.5">BENDIX KING</text></svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 150 30" width="150" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="16" font-weight="800">ROCKWELL
+                        COLLINS</text></svg></div>
+
+            <div class="partner-logo"><svg viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+                    <path
+                        d="M10,25 C15,25 20,20 20,15 C20,10 15,5 10,5 C5,5 0,10 0,15 C0,20 5,25 10,25 Z M30,5 L30,25 L35,25 L35,5 L30,5 Z M45,5 L45,25 L50,25 L50,15 L60,15 L60,25 L65,25 L65,5 L60,5 L60,10 L50,10 L50,5 L45,5 Z M75,5 C80,5 85,10 85,15 C85,20 80,25 75,25 C70,25 65,20 65,15 L65,5 L70,5 L70,15 C70,18 72,20 75,20 C78,20 80,18 80,15 L80,5 L85,5 Z M95,5 L95,25 L100,25 L100,5 L95,5 Z" />
+                </svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 100 25" width="100" height="25" fill="currentColor"><text x="0"
+                        y="20" font-family="'Arial Black', sans-serif" font-size="22" font-weight="900"
+                        letter-spacing="1">THALES</text></svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 120 30" width="120" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="18" font-weight="800">HONEYWELL</text>
+                    <path d="M110,6 L118,6 L114,12 Z" fill="#D31245" />
+                </svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 150 30" width="150" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="17" font-weight="bold"
+                        letter-spacing="1.5">BENDIX KING</text></svg></div>
+            <div class="partner-logo"><svg viewBox="0 0 150 30" width="150" height="30" fill="currentColor"><text x="0"
+                        y="22" font-family="'Arial', sans-serif" font-size="16" font-weight="800">ROCKWELL
+                        COLLINS</text></svg></div>
+        </div>
+    </div>
+
+    <!-- Timeline / Certifications -->
+    <section id="certifications">
+        <div class="section-title reveal">
+            <span class="mono-text">Conformidade e Padrões</span>
+            <h2>Certificações Institucionais</h2>
+        </div>
+        <div class="timeline">
+            <!-- Horizontal axis handled by ::before pseudoelement -->
+
+            <div class="timeline-item reveal" style="transition-delay: 0.1s;">
+                <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-shield-alt"/></svg>
+                <div class="mono-text" style="color: var(--cyan-aero); margin-bottom: 0.5rem;">COM: 200601-05</div>
+                <h3>ANAC Brasil</h3>
+                <p style="font-size: var(--caption); color: #94a3b8;">Homologação pelo órgão regulador nacional
+                    auditando processos de manutenção periódica.</p>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.2s;">
+                <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-globe-europe"/></svg>
+                <div class="mono-text" style="color: var(--cyan-aero); margin-bottom: 0.5rem;">PART-145 Ref. 145.0924
+                </div>
+                <h3>EASA</h3>
+                <p style="font-size: var(--caption); color: #94a3b8;">Aprovação da Agência Europeia atestando o padrão
+                    internacional inviolável em reparos.</p>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.3s;">
+                <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-file-signature"/></svg>
+                <div class="mono-text" style="color: var(--cyan-aero); margin-bottom: 0.5rem;">ISO 9001:2015</div>
+                <h3>Gestão de Qualidade</h3>
+                <p style="font-size: var(--caption); color: #94a3b8;">Gestão de qualidade garantindo rastreabilidade
+                    metrológica completa em todos os laudos e OTNs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrutura / Mosaic -->
+    <section id="structure" class="active">
+        <div class="section-title reveal">
+            <span class="mono-text">Infraestrutura Operacional</span>
+            <h2>1.200m² de Excelência</h2>
+        </div>
+        <!-- Filtros de Categoria -->
+        <div class="mosaic-filters reveal"
+            style="display:flex; gap:0.75rem; justify-content:center; margin-bottom: 2rem; flex-wrap: wrap;">
+            <button class="btn btn-secondary filter-btn active" data-filter="all"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Todos</button>
+            <button class="btn btn-secondary filter-btn" data-filter="fachada"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Fachada &amp; Base</button>
+            <button class="btn btn-secondary filter-btn" data-filter="laboratorio"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Laboratórios</button>
+            <button class="btn btn-secondary filter-btn" data-filter="equipamento"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Equipamentos</button>
+            <button class="btn btn-secondary filter-btn" data-filter="componente"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Componentes</button>
+            <button class="btn btn-secondary filter-btn" data-filter="equipe"
+                style="padding: 0.5rem 1rem; font-size: 0.85rem;">Equipe Técnica</button>
+        </div>
+
+        <!-- Galeria Completa — 23 fotos reais -->
+        <div class="mosaic active visible">
+            <!-- ═══ FACHADA & BASE ═══ -->
+            <div class="mosaic-item large" data-cat="fachada" data-label="Fachada Lanceair Brasil MRO">
+                <img src="assets/estrutura/estrutura-fachada-lanceair-brasil.webp"
+                    srcset="assets/estrutura/estrutura-fachada-lanceair-brasil-400w.webp 400w, assets/estrutura/estrutura-fachada-lanceair-brasil-800w.webp 800w, assets/estrutura/estrutura-fachada-lanceair-brasil-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Vista frontal do hangar da Lanceair Brasil MRO em S�o Paulo" loading="lazy">
+            </div>
+            <div class="mosaic-item wide" data-cat="fachada" data-label="Ambiente de Trabalho">
+                <img src="assets/estrutura/estrutura-ambiente-trabalho.webp"
+                    srcset="assets/estrutura/estrutura-ambiente-trabalho-400w.webp 400w, assets/estrutura/estrutura-ambiente-trabalho-800w.webp 800w, assets/estrutura/estrutura-ambiente-trabalho-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="�rea de trabalho interna do centro de manuten��o aeron�utica com bancadas t�cnicas" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="fachada" data-label="Oficina Principal">
+                <img src="assets/estrutura/estrutura-oficina-principal.webp"
+                    srcset="assets/estrutura/estrutura-oficina-principal-400w.webp 400w, assets/estrutura/estrutura-oficina-principal-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Oficina principal com ferramental especializado para manuten��o de aeronaves Lanceair" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="fachada" data-label="Ferramental e Estoque">
+                <img src="assets/estrutura/estrutura-ferramental-estoque.webp"
+                    srcset="assets/estrutura/estrutura-ferramental-estoque-400w.webp 400w, assets/estrutura/estrutura-ferramental-estoque-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Estoque organizado de ferramental aeron�utico calibrado e rastre�vel" loading="lazy">
+            </div>
+
+            <!-- ═══ LABORATÓRIOS ═══ -->
+            <div class="mosaic-item tall" data-cat="laboratorio" data-label="Sala de Controle — Starter Generator">
+                <img src="assets/estrutura/estrutura-sala-controle-starter.webp"
+                    srcset="assets/estrutura/estrutura-sala-controle-starter-400w.webp 400w, assets/estrutura/estrutura-sala-controle-starter-800w.webp 800w, assets/estrutura/estrutura-sala-controle-starter-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Sala de Controle — Starter Generator" loading="lazy">
+            </div>
+            <div class="mosaic-item wide" data-cat="laboratorio" data-label="Laboratório Starter Generator">
+                <img src="assets/estrutura/estrutura-lab-starter-generator.webp"
+                    srcset="assets/estrutura/estrutura-lab-starter-generator.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Laboratório Starter Generator" loading="lazy">
+            </div>
+            <div class="mosaic-item wide" data-cat="laboratorio" data-label="Bancada de Instrumentos">
+                <img src="assets/estrutura/estrutura-bancada-instrumentos.webp"
+                    srcset="assets/estrutura/estrutura-bancada-instrumentos-400w.webp 400w, assets/estrutura/estrutura-bancada-instrumentos-800w.webp 800w, assets/estrutura/estrutura-bancada-instrumentos-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Bancada de instrumentos de precis�o para calibra��o e diagn�stico avi�nico" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="laboratorio" data-label="Laboratório de Baterias">
+                <img src="assets/estrutura/estrutura-laboratorio-baterias.webp"
+                    srcset="assets/estrutura/estrutura-laboratorio-baterias.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Laboratório de Baterias" loading="lazy">
+            </div>
+            <div class="mosaic-item wide" data-cat="laboratorio" data-label="Laboratório de Ácido">
+                <img src="assets/estrutura/estrutura-laboratorio-acido.webp"
+                    srcset="assets/estrutura/estrutura-laboratorio-acido-400w.webp 400w, assets/estrutura/estrutura-laboratorio-acido-800w.webp 800w, assets/estrutura/estrutura-laboratorio-acido-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Laboratório de Ácido" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="laboratorio" data-label="Laboratório Principal">
+                <img src="assets/estrutura/estrutura-laboratorio-principal.webp"
+                    srcset="assets/estrutura/estrutura-laboratorio-principal-400w.webp 400w, assets/estrutura/estrutura-laboratorio-principal-800w.webp 800w, assets/estrutura/estrutura-laboratorio-principal-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Laboratório Principal" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="laboratorio" data-label="Ensaios NDT">
+                <img src="assets/estrutura/estrutura-ensaios-ndt.webp"
+                    srcset="assets/estrutura/estrutura-ensaios-ndt.webp 1200w" sizes="(max-width: 768px) 100vw, 25vw"
+                    alt="Equipamento para ensaios n�o destrutivos � l�quido penetrante e part�cula magn�tica" loading="lazy">
+            </div>
+
+            <!-- ═══ EQUIPAMENTOS ═══ -->
+            <div class="mosaic-item wide" data-cat="equipamento" data-label="Bancada de Testes Aviônica">
+                <img src="assets/estrutura/estrutura-bancada-testes-avionica.webp"
+                    srcset="assets/estrutura/estrutura-bancada-testes-avionica-400w.webp 400w, assets/estrutura/estrutura-bancada-testes-avionica-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Bancada de Testes Aviônica" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="equipamento" data-label="Área de Trabalho Eletrônica">
+                <img src="assets/estrutura/estrutura-area-trabalho-eletronica.webp"
+                    srcset="assets/estrutura/estrutura-area-trabalho-eletronica-400w.webp 400w, assets/estrutura/estrutura-area-trabalho-eletronica-800w.webp 800w, assets/estrutura/estrutura-area-trabalho-eletronica-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Área de Trabalho Eletrônica" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="equipamento" data-label="Equipamento de Análise Ni-Cd">
+                <img src="assets/estrutura/estrutura-equipamento-analise-nicd.webp"
+                    srcset="assets/estrutura/estrutura-equipamento-analise-nicd-400w.webp 400w, assets/estrutura/estrutura-equipamento-analise-nicd-800w.webp 800w, assets/estrutura/estrutura-equipamento-analise-nicd-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Equipamento de Análise Ni-Cd" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="equipamento" data-label="Monitoramento Digital">
+                <img src="assets/estrutura/estrutura-equipe-tecnica-computador.webp"
+                    srcset="assets/estrutura/estrutura-equipe-tecnica-computador-400w.webp 400w, assets/estrutura/estrutura-equipe-tecnica-computador-800w.webp 800w, assets/estrutura/estrutura-equipe-tecnica-computador-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="T�cnico monitorando dados de diagn�stico em sistema computadorizado MRO" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="equipamento" data-label="Usinagem de Rotor">
+                <img src="assets/estrutura/estrutura-usinagem-rotor.webp"
+                    srcset="assets/estrutura/estrutura-usinagem-rotor-400w.webp 400w, assets/estrutura/estrutura-usinagem-rotor-800w.webp 800w, assets/estrutura/estrutura-usinagem-rotor-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Usinagem CNC de rotor de starter generator em torno de precis�o" loading="lazy">
+            </div>
+
+            <!-- ═══ COMPONENTES ═══ -->
+            <div class="mosaic-item wide" data-cat="componente" data-label="Componentes Mecânicos">
+                <img src="assets/estrutura/estrutura-componentes-mecanicos.webp"
+                    srcset="assets/estrutura/estrutura-componentes-mecanicos-400w.webp 400w, assets/estrutura/estrutura-componentes-mecanicos-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Componentes Mecânicos" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="componente" data-label="Baterias Ni-Cd Aeronáuticas">
+                <img src="assets/estrutura/estrutura-baterias-nicd-aeronauticas.webp"
+                    srcset="assets/estrutura/estrutura-baterias-nicd-aeronauticas-400w.webp 400w, assets/estrutura/estrutura-baterias-nicd-aeronauticas-800w.webp 800w, assets/estrutura/estrutura-baterias-nicd-aeronauticas-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Baterias Ni-Cd Aeronáuticas" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="componente" data-label="Peças Aeronáuticas">
+                <img src="assets/estrutura/estrutura-pecas-aeronauticas.webp"
+                    srcset="assets/estrutura/estrutura-pecas-aeronauticas-400w.webp 400w, assets/estrutura/estrutura-pecas-aeronauticas-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Peças Aeronáuticas" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="componente" data-label="Teste de Baterias Ni-Cd">
+                <img src="assets/estrutura/estrutura-teste-baterias-nicd.webp"
+                    srcset="assets/estrutura/estrutura-teste-baterias-nicd-400w.webp 400w, assets/estrutura/estrutura-teste-baterias-nicd-800w.webp 800w, assets/estrutura/estrutura-teste-baterias-nicd-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Teste de carga e descarga de baterias Ni-Cd com monitoramento de ciclo completo" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="componente" data-label="Starter Generator em Bancada">
+                <img src="assets/estrutura/estrutura-starter-generator-bancada.webp"
+                    srcset="assets/estrutura/estrutura-starter-generator-bancada-400w.webp 400w, assets/estrutura/estrutura-starter-generator-bancada-800w.webp 800w, assets/estrutura/estrutura-starter-generator-bancada-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Starter generator Thales montado em bancada de teste com telemetria em tempo real" loading="lazy">
+            </div>
+
+            <!-- ═══ EQUIPE TÉCNICA ═══ -->
+            <div class="mosaic-item wide" data-cat="equipe" data-label="Equipe Técnica Lanceair">
+                <img src="assets/estrutura/estrutura-equipe-tecnica.webp"
+                    srcset="assets/estrutura/estrutura-equipe-tecnica-400w.webp 400w, assets/estrutura/estrutura-equipe-tecnica-800w.webp 800w"
+                    sizes="(max-width: 768px) 100vw, 50vw" alt="Equipe Técnica Lanceair" loading="lazy">
+            </div>
+            <div class="mosaic-item" data-cat="equipe" data-label="Sala Técnica">
+                <img src="assets/estrutura/estrutura-sala-tecnica.webp"
+                    srcset="assets/estrutura/estrutura-sala-tecnica-400w.webp 400w, assets/estrutura/estrutura-sala-tecnica-800w.webp 800w, assets/estrutura/estrutura-sala-tecnica-1200w.webp 1200w"
+                    sizes="(max-width: 768px) 100vw, 25vw" alt="Sala Técnica" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Orçamento Multi-Step Form -->
+    <section id="contact">
+        <div class="section-title reveal">
+            <span class="mono-text">Solicitar Orçamento</span>
+            <h2>Solicite um Orçamento</h2>
+        </div>
+        <div class="multistep-form-wrapper reveal">
+            <!-- Progress Bar -->
+            <div class="form-progress">
+                <div class="form-progress-bar" id="formProgressBar" style="width: 33.33%;"></div>
+            </div>
+            <div class="form-step-labels">
+                <span class="step-label active" data-step="1">1. Identificação</span>
+                <span class="step-label" data-step="2">2. Aeronave</span>
+                <span class="step-label" data-step="3">3. Serviço</span>
+            </div>
+
+            <form class="contact-form" id="multiStepForm">
+                <!-- ETAPA 1: Identificação -->
+                <div class="form-step active" data-step="1">
+                    <div class="form-group">
+                        <label for="ms-name" class="mono-text">Nome Completo</label>
+                        <input type="text" id="ms-name" placeholder="Seu nome completo" required>
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ms-email" class="mono-text">E-mail</label>
+                        <input type="email" id="ms-email" placeholder="contato@empresa.com" required>
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ms-phone" class="mono-text">Telefone / WhatsApp</label>
+                        <input type="tel" id="ms-phone" placeholder="(11) 99999-9999" required>
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="form-nav">
+                        <span></span>
+                        <button type="button" class="btn btn-primary form-next">Avançar <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-arrow-right"/></svg></button>
+                    </div>
+                </div>
+
+                <!-- ETAPA 2: Aeronave -->
+                <div class="form-step" data-step="2">
+                    <div class="form-group">
+                        <label for="ms-registration" class="mono-text">Matrícula da Aeronave</label>
+                        <input type="text" id="ms-registration" placeholder="PR-XXX" style="text-transform: uppercase;">
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="ms-model" class="mono-text">Modelo</label>
+                        <select id="ms-model">
+                            <option value="">Selecione o modelo...</option>
+                            <option value="legacy">Lanceair Legacy</option>
+                            <option value="evolution">Lanceair Evolution</option>
+                            <option value="es">Lanceair ES</option>
+                            <option value="iv">Lanceair IV / IV-P</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ms-base" class="mono-text">Base / Aeródromo (ICAO)</label>
+                        <input type="text" id="ms-base" placeholder="Ex: SBJD, SBBH" style="text-transform: uppercase;">
+                    </div>
+                    <div class="form-nav">
+                        <button type="button" class="form-back">← Voltar</button>
+                        <button type="button" class="btn btn-primary form-next">Avançar <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-arrow-right"/></svg></button>
+                    </div>
+                </div>
+
+                <!-- ETAPA 3: Serviço -->
+                <div class="form-step" data-step="3">
+                    <p class="mono-text" style="color: var(--cyan-aero); margin-bottom: 1rem;">Selecione os serviços
+                        desejados:</p>
+                    <div class="form-checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="manutencao">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-wrench"/></svg> Manutenção Programada</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="aog">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-exclamation-triangle"/></svg> AOG /
+                                Urgência</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="inspecao">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-search"/></svg> Inspeção Pré-Compra</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="avionicos">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-microchip"/></svg> Aviônicos / Painel</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="estrutura">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-layer-group"/></svg> Estrutura em
+                                Compósito</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="servico" value="pintura">
+                            <span class="checkbox-visual"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-paint-roller"/></svg> Pintura Técnica</span>
+                        </label>
+                    </div>
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label for="ms-message" class="mono-text">Mensagem (opcional)</label>
+                        <textarea id="ms-message" rows="3"
+                            placeholder="Descreva brevemente sua necessidade..."></textarea>
+                    </div>
+                    <div class="form-nav">
+                        <button type="button" class="form-back">← Voltar</button>
+                        <button type="submit" class="btn btn-primary" id="formSubmitBtn" style="width: 100%;">
+                            <span class="btn-text">Enviar Solicitação</span>
+                            <span class="btn-loading" style="display:none;"><svg class="icon icon-spin" aria-hidden="true"><use href="icons.svg#icon-spinner"/></svg>
+                                Enviando...</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- Confirmação inline -->
+            <div class="form-success" id="formSuccess" style="display:none;">
+                <svg class="icon" aria-hidden="true" style="font-size: 3rem; color: var(--cyan-aero); margin-bottom: 1rem;"><use href="icons.svg#icon-check-circle"/></svg>
+                <h3>Solicitação Enviada!</h3>
+                <p>Nossa equipe entrará em contato em até 2 horas úteis.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="site-footer">
+        <div class="footer-accent"></div>
+
+        <div class="footer-grid">
+            <div class="footer-col-wide">
+                <a href="#" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-plane-up"/></svg> LANCEAIR <span>BRASIL</span> MRO
+                </a>
+                <p class="footer-description">Centro de
+                    excelência em manutenção aeronáutica. Reparos nível componente homologados internacionalmente.
+                    Precisão inegociável, segurança absoluta.</p>
+                <div class="mono-text footer-reg-box">
+                    <strong>REGISTROS DE AUTORIDADE</strong>
+                    ANAC COM: 200601-05<br>
+                    EASA PART-145: 145.0924<br>
+                    FAA: RENOVAÇÃO EM ANDAMENTO
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Infraestrutura e Capacidades</h4>
+                <ul class="footer-capabilities">
+                    <li><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg> Starter Generator (Thales)</li>
+                    <li><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg> Baterias Ni-Cd & Lead-Acid</li>
+                    <li><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg> Ensaios NDT (ISO 9712)</li>
+                    <li><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg> Hidráulica e Pneumática</li>
+                    <li><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg> Eletrônica Aviônica</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-contact">
+                <h4 class="footer-heading">AOG e Contato Operacional</h4>
+                <div class="mono-text footer-contact-grid">
+                    <div>
+                        <span class="footer-contact-label">LINHA DE EMERGÊNCIA AOG (24/7)</span>
+                        <a href="tel:+5511995849038"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-phone-alt"/></svg> +55 11 99584-9038</a>
+                    </div>
+                    <div>
+                        <span class="footer-contact-label">SUPORTE TÉCNICO</span>
+                        <a href="mailto:celio@lanceair.com.br"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-envelope"/></svg> celio@lanceair.com.br</a>
+                    </div>
+                    <div>
+                        <span class="footer-contact-label">LOCALIZAÇÃO DA UNIDADE</span>
+                        <span><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-map-marker-alt"/></svg> São Paulo, SP - Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2026 LANCEAIR BRASIL MRO. TODOS OS DIREITOS RESERVADOS.
+            </div>
+            <div class="footer-links" style="font-size: 0.85rem; display: flex; gap: 1.5rem;">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Seal Fixo -->
+    <div class="floating-seal mono-text">
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-check-circle"/></svg> EASA 145.0924
+    </div>
+
+    <!-- AOG CTA Flutuante -->
+    <div id="aog-cta" class="aog-cta-banner" style="display: none;">
+        <div class="aog-cta-content">
+            <span><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-exclamation-circle"/></svg> Aeronave em solo? Fale com nossa equipe AOG agora.</span>
+            <a href="https://wa.me/5511995849038?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20MRO%20para%20minha%20aeronave%20Lanceair."
+                class="btn btn-primary aog-whatsapp-btn" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-whatsapp"/></svg> WhatsApp AOG
+            </a>
+        </div>
+        <button class="aog-cta-close" id="aogClose" aria-label="Fechar">&times;</button>
+    </div>
+
+    <!-- Lightbox Galeria -->
+    <div id="lightbox" class="lightbox" style="display: none;" role="dialog" aria-modal="true"
+        aria-label="Galeria de imagens">
+        <div class="lightbox-overlay" id="lightboxOverlay"></div>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-left"/></svg></button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-chevron-right"/></svg></button>
+            <button class="lightbox-close" id="lightboxClose"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-times"/></svg></button>
+        </div>
+    </div>
+
+    <!-- Interface scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

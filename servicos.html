@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços MRO | Lanceair Brasil</title>
+    <meta name="description"
+        content="Serviços especializados de manutenção, reparo e overhaul para aeronaves Lanceair. Starter Generator, Baterias, NDT, Aviônicos e mais.">
+    <meta name="theme-color" content="#0A0E1A">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-plane-up"/></svg> LANCEAIR <span>BRASIL</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#services">Capacidades</a></li>
+                <li><a href="index.html#certifications">Certificações</a></li>
+                <li><a href="index.html#structure">Infraestrutura</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="index.html#contact" class="btn btn-secondary"
+                style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Solicitar
+                Orçamento</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Compacto -->
+    <section class="hero hero-compact" style="padding:0; margin:0; max-width:100%;">
+        <img src="assets/estrutura/estrutura-oficina-principal.webp" alt="" role="presentation" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Início</a> / <span>Serviços MRO</span>
+            </div>
+            <h1 style="text-shadow: 0 4px 15px rgba(0,0,0,0.6);">Capacidades <span>Técnicas</span></h1>
+            <p style="text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #F4F6F9;">Mais de 25 anos de excelência
+                assegurando
+                detalhamento completo dos serviços de manutenção, reparo e revisão homologados ANAC e EASA.</p>
+        </div>
+    </section>
+
+    <!-- Layout Principal -->
+    <div class="services-layout">
+        <!-- Coluna Principal: Accordion -->
+        <div>
+            <!-- Starter Generator -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-charging-station"/></svg>
+                    Starter Generator — Thales Authorized Center
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Reparos e revisões completas de arrancadores/geradores Thales com ensaios em bancadas simuladas.
+                        Telemetria exata com laudo técnico completo para cada componente testado.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                        <span class="norm-tag">CMM Thales</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-lab-starter-generator.webp" alt="Laborat�rio de starter generator com bancada de testes simulados Thales"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Baterias -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-battery-full"/></svg>
+                    Baterias Aeronáuticas — Ni-Cd / Lead-Acid
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Manutenção preventiva e corretiva de baterias aeronáuticas Ni-Cd e Lead-Acid. Processos térmicos
+                        e
+                        químicos rigorosos seguindo as normas dos fabricantes para ciclo de vida máximo.</p>
+                    <div>
+                        <span class="norm-tag">ICA 00-011</span>
+                        <span class="norm-tag">CMM Saft / Marathon</span>
+                        <span class="norm-tag">RBAC 43</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-laboratorio-baterias.webp" alt="Laboratório de Baterias"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Ensaios NDT -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-microscope"/></svg>
+                    Ensaios NDT — Testes Não Destrutivos
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Inspeções profundas por Líquido Penetrante (LP), Partícula Magnética (PM), Eddy Current (EC) e
+                        Ultrassom (UT). Técnicos certificados nível II conforme normas internacionais.</p>
+                    <div>
+                        <span class="norm-tag">ISO 9712</span>
+                        <span class="norm-tag">NAS410</span>
+                        <span class="norm-tag">ASTM E1444</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-ensaios-ndt.webp" alt="Equipamento para ensaios n�o destrutivos � l�quido penetrante e part�cula magn�tica" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Acessórios Mecânicos -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-cogs"/></svg>
+                    Acessórios Mecânicos — Sistemas Hidráulicos e Pneumáticos
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Serviços mecânicos detalhados em sistemas pneumáticos, hidráulicos, estruturais e de combustível.
+                        Revisão completa de atuadores, válvulas e bombas com testes de pressão e leak test.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                        <span class="norm-tag">IPC</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-componentes-mecanicos.webp" alt="Componentes Mecânicos"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Componentes Eletrônicos -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-microchip"/></svg>
+                    Componentes Eletrônicos — Aviônicos
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Diagnóstico de alta fidelidade e reparo de placas aviônicas utilizando instrumentação digital
+                        avançada.
+                        Atualização de software e firmware conforme Service Bulletins dos fabricantes.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">CMM Garmin</span>
+                        <span class="norm-tag">STC / SB</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-bancada-testes-avionica.webp" alt="Bancada Aviônicos"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Inspeção Pré-Compra -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <svg class="icon" aria-hidden="true" style="color:var(--cyan-aero);width:24px"><use href="icons.svg#icon-search"/></svg>
+                    Inspeção Pré-Compra
+                    <svg class="icon chevron" aria-hidden="true"><use href="icons.svg#icon-chevron-down"/></svg>
+                </button>
+                <div class="accordion-body">
+                    <p>Avaliação técnica completa da aeronave antes da aquisição. Inclui inspeção estrutural, revisão de
+                        logbooks, avaliação de corrosão, testes de sistemas e relatório detalhado com parecer técnico.
+                    </p>
+                    <div>
+                        <span class="norm-tag">AC 20-106</span>
+                        <span class="norm-tag">RBAC 91</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-sala-controle-starter.webp" alt="Sala de controle com pain�is digitais para ensaio de starter generator Thales"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Sticky -->
+        <div class="sidebar-sticky">
+            <div class="sidebar-form">
+                <h3><svg class="icon" aria-hidden="true" style="color: var(--cyan-aero); margin-right: 8px;"><use href="icons.svg#icon-paper-plane"/></svg> Orçamento
+                    Rápido</h3>
+                <form class="contact-form" id="sidebarForm">
+                    <div class="form-group">
+                        <label for="sb-name">Nome</label>
+                        <input type="text" id="sb-name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sb-phone">WhatsApp</label>
+                        <input type="tel" id="sb-phone" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sb-service">Serviço</label>
+                        <select id="sb-service">
+                            <option value="">Selecione...</option>
+                            <option value="sg">Starter Generator</option>
+                            <option value="bat">Baterias</option>
+                            <option value="ndt">Ensaios NDT</option>
+                            <option value="mech">Mecânicos</option>
+                            <option value="avionics">Aviônicos</option>
+                            <option value="insp">Inspeção Pré-Compra</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; justify-content: center; padding: 0.8rem;">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Final -->
+    <div class="cta-final">
+        <h2>Precisa de Suporte <span style="color: var(--cyan-aero);">Imediato?</span></h2>
+        <p>Nossa linha AOG está disponível 24 horas por dia, 7 dias por semana, 365 dias por ano.</p>
+        <div class="cta-buttons">
+            <a href="tel:+5511995849038" class="btn btn-secondary"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-phone-alt"/></svg> +55 11
+                99584-9038</a>
+            <a href="https://wa.me/5511995849038?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20MRO%20para%20minha%20aeronave%20Lanceair."
+                class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-whatsapp"/></svg>
+                WhatsApp AOG</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-accent"></div>
+        <div class="footer-grid">
+            <div class="footer-col-wide">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-plane-up"/></svg> LANCEAIR <span>BRASIL</span> MRO
+                </a>
+                <p class="footer-description">Centro de
+                    excelência em manutenção aeronáutica. Reparos nível componente homologados internacionalmente.</p>
+                <div class="mono-text footer-reg-box">
+                    <strong>REGISTROS DE AUTORIDADE</strong>
+                    ANAC COM: 200601-05<br>
+                    EASA PART-145: 145.0924
+                </div>
+            </div>
+            <div class="footer-col-contact">
+                <h4 class="footer-heading">AOG e Contato Operacional</h4>
+                <div class="mono-text footer-contact-grid">
+                    <div>
+                        <span class="footer-contact-label">LINHA DE EMERGÊNCIA AOG (24/7)</span>
+                        <a href="tel:+5511995849038"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-phone-alt"/></svg> +55 11 99584-9038</a>
+                    </div>
+                    <div>
+                        <span class="footer-contact-label">SUPORTE TÉCNICO</span>
+                        <a href="mailto:celio@lanceair.com.br"><svg class="icon" aria-hidden="true"><use href="icons.svg#icon-envelope"/></svg> celio@lanceair.com.br</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="text-align: center; justify-content: center;">
+            <div class="footer-copyright">
+                &copy; 2026 LANCEAIR BRASIL MRO. TODOS OS DIREITOS RESERVADOS.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Accordion toggle (page-specific)
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const body = btn.nextElementSibling;
+                const isOpen = body.classList.contains('open');
+
+                document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+                document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('open'));
+
+                if (!isOpen) {
+                    body.classList.add('open');
+                    btn.classList.add('open');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

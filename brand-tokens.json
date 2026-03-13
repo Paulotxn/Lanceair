@@ -1,0 +1,63 @@
+{
+  "brand": "Lanceair Brasil",
+  "version": "2.0",
+  "type": "Brand Lock Variables — aligned with CSS :root",
+  "colors": {
+    "corporativeBlues": {
+      "primary": "#2563EB",
+      "primaryLight": "#60A5FA",
+      "accent": "#00AEEF",
+      "accentHover": "#008CBE"
+    },
+    "backgrounds": {
+      "main": "#0A0E1A",
+      "secondary": "#050812",
+      "surface": "rgba(255, 255, 255, 0.03)"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "soft": "#cbd5e1",
+      "muted": "#94a3b8",
+      "dim": "#64748b",
+      "light": "#F4F6F9"
+    },
+    "glass": {
+      "background": "rgba(255, 255, 255, 0.03)",
+      "border": "rgba(255, 255, 255, 0.12)"
+    }
+  },
+  "typography": {
+    "base": "Inter, sans-serif",
+    "mono": "JetBrains Mono, monospace",
+    "weights": [
+      400,
+      700,
+      800
+    ],
+    "scale": {
+      "h1": "52px",
+      "h2": "36px",
+      "body": "16px",
+      "caption": "13px"
+    }
+  },
+  "metrics": {
+    "header": {
+      "paddingDefault": "1.5rem 2rem",
+      "paddingScrolled": "1rem 2rem",
+      "zIndex": 1000
+    },
+    "borderRadius": {
+      "base": "8px"
+    },
+    "maxWidth": "1200px"
+  },
+  "logoRules": {
+    "icon": "fas fa-plane-up",
+    "textBase": "LANCEAIR",
+    "textHighlight": "BRASIL",
+    "colorBase": "#F8FAFC",
+    "colorHighlight": "#2563EB",
+    "notes": "Imutável: proporções, ícone e pesos visuais não devem ser alterados sob nenhuma circunstância."
+  }
+}
