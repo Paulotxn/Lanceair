@@ -1,4 +1,4 @@
-// ── Safety Loader Check ──
+﻿// ── Safety Loader Check ──
 function removeLoader() {
     const loader = document.getElementById('loader');
     if (loader && loader.style.opacity !== '0') {
