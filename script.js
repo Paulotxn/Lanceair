@@ -321,7 +321,7 @@ filterButtons.forEach(btn => {
                 errorBanner.className = 'form-error-banner';
                 errorBanner.setAttribute('role', 'alert');
                 errorBanner.innerHTML = `
-                    <svg class="icon" aria-hidden="true"><use href="icons.svg#icon-exclamation-triangle"/></svg>
+                    <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#icon-exclamation-triangle"/></svg>
                     <div>
                         <strong>Erro ao enviar.</strong> Verifique sua conexão ou tente novamente.<br>
                         <a href="mailto:celio@lanceair.com.br?subject=Solicitação de Orçamento MRO">Ou envie direto para celio@lanceair.com.br</a>
