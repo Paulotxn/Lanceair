@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços MRO | Lanceair Brasil</title>
+    <meta name="description"
+        content="Serviços especializados de manutenção, reparo e overhaul para aeronaves Lanceair. Starter Generator, Baterias, NDT, Aviônicos e mais.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Servicos Page Specific */
+        .hero-compact {
+            height: 40vh;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+
+        .breadcrumb {
+            font-family: var(--font-mono);
+            font-size: var(--caption);
+            color: #94a3b8;
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--cyan-aero);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .services-layout {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Accordion */
+        .accordion-item {
+            border: 1px solid var(--glass-border);
+            border-radius: var(--br);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+        }
+
+        .accordion-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #fff;
+            width: 100%;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: var(--font-sans);
+            transition: background 0.3s;
+            text-align: left;
+        }
+
+        .accordion-header:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .accordion-header i.icon {
+            color: var(--cyan-aero);
+            width: 24px;
+            text-align: center;
+        }
+
+        .accordion-header .chevron {
+            margin-left: auto;
+            transition: transform 0.3s;
+            color: #64748b;
+        }
+
+        .accordion-header.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        .accordion-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 1.5rem;
+        }
+
+        .accordion-body.open {
+            max-height: 800px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .accordion-body p {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .accordion-body .norm-tag {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            background: rgba(0, 174, 239, 0.1);
+            color: var(--cyan-aero);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid rgba(0, 174, 239, 0.2);
+        }
+
+        .accordion-body img {
+            width: 100%;
+            border-radius: var(--br);
+            margin-top: 1rem;
+            object-fit: cover;
+            max-height: 250px;
+        }
+
+        /* Sidebar */
+        .sidebar-sticky {
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+        }
+
+        .sidebar-form {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--br);
+            padding: 2rem;
+            backdrop-filter: blur(12px);
+        }
+
+        .sidebar-form h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .sidebar-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-form label {
+            display: block;
+            margin-bottom: 0.4rem;
+            color: #cbd5e1;
+            font-family: var(--font-mono);
+            font-size: var(--caption);
+        }
+
+        /* CTA Final Banner */
+        .cta-final {
+            background: linear-gradient(135deg, #0A1F44 0%, #0F172A 100%);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--br);
+            padding: 3rem 2rem;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+        }
+
+        .cta-final h2 {
+            margin-bottom: 1rem;
+        }
+
+        .cta-final p {
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-final .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .whatsapp-btn {
+            background: #25D366 !important;
+            color: #fff !important;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1EBE5A !important;
+        }
+
+        @media (max-width: 768px) {
+            .services-layout {
+                grid-template-columns: 1fr;
+                padding: 2rem 1rem;
+            }
+
+            .sidebar-sticky {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-plane-up"></i> LANCEAIR <span>BRASIL</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#services">Capacidades</a></li>
+                <li><a href="index.html#certifications">Certificações</a></li>
+                <li><a href="index.html#structure">Infraestrutura</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+            <a href="index.html#contact" class="btn btn-secondary"
+                style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">Solicitar
+                Orçamento</a>
+        </div>
+    </header>
+
+    <!-- Hero Compacto -->
+    <section class="hero hero-compact" style="padding:0; margin:0; max-width:100%;">
+        <img src="assets/estrutura/estrutura-oficina-principal.webp" alt="Oficina Lanceair Brasil" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Início</a> / <span>Serviços MRO</span>
+            </div>
+            <h1 style="text-shadow: 0 4px 15px rgba(0,0,0,0.6);">Capacidades <span>Técnicas</span></h1>
+            <p style="text-shadow: 0 2px 10px rgba(0,0,0,0.8); color: #F4F6F9;">Detalhamento completo dos serviços de
+                manutenção, reparo e revisão homologados ANAC e EASA.</p>
+        </div>
+    </section>
+
+    <!-- Layout Principal -->
+    <div class="services-layout">
+        <!-- Coluna Principal: Accordion -->
+        <div>
+            <!-- Starter Generator -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-charging-station icon"></i>
+                    Starter Generator — Thales Authorized Center
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Reparos e revisões completas de arrancadores/geradores Thales com ensaios em bancadas simuladas.
+                        Telemetria exata com laudo técnico completo para cada componente testado.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                        <span class="norm-tag">CMM Thales</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-lab-starter-generator.webp" alt="Lab Starter Generator"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Baterias -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-battery-full icon"></i>
+                    Baterias Aeronáuticas — Ni-Cd / Lead-Acid
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Manutenção preventiva e corretiva de baterias aeronáuticas Ni-Cd e Lead-Acid. Processos térmicos
+                        e
+                        químicos rigorosos seguindo as normas dos fabricantes para ciclo de vida máximo.</p>
+                    <div>
+                        <span class="norm-tag">ICA 00-011</span>
+                        <span class="norm-tag">CMM Saft / Marathon</span>
+                        <span class="norm-tag">RBAC 43</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-laboratorio-baterias.webp" alt="Laboratório de Baterias"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Ensaios NDT -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-microscope icon"></i>
+                    Ensaios NDT — Testes Não Destrutivos
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Inspeções profundas por Líquido Penetrante (LP), Partícula Magnética (PM), Eddy Current (EC) e
+                        Ultrassom (UT). Técnicos certificados nível II conforme normas internacionais.</p>
+                    <div>
+                        <span class="norm-tag">ISO 9712</span>
+                        <span class="norm-tag">NAS410</span>
+                        <span class="norm-tag">ASTM E1444</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-ensaios-ndt.webp" alt="Ensaios NDT" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Acessórios Mecânicos -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-cogs icon"></i>
+                    Acessórios Mecânicos — Sistemas Hidráulicos e Pneumáticos
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Serviços mecânicos detalhados em sistemas pneumáticos, hidráulicos, estruturais e de combustível.
+                        Revisão completa de atuadores, válvulas e bombas com testes de pressão e leak test.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                        <span class="norm-tag">IPC</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-componentes-mecanicos.webp" alt="Componentes Mecânicos"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Componentes Eletrônicos -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-microchip icon"></i>
+                    Componentes Eletrônicos — Aviônicos
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Diagnóstico de alta fidelidade e reparo de placas aviônicas utilizando instrumentação digital
+                        avançada.
+                        Atualização de software e firmware conforme Service Bulletins dos fabricantes.</p>
+                    <div>
+                        <span class="norm-tag">RBAC 43</span>
+                        <span class="norm-tag">CMM Garmin</span>
+                        <span class="norm-tag">STC / SB</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-bancada-testes-avionica.webp" alt="Bancada Aviônicos"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Inspeção Pré-Compra -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <i class="fas fa-search icon"></i>
+                    Inspeção Pré-Compra
+                    <i class="fas fa-chevron-down chevron"></i>
+                </button>
+                <div class="accordion-body">
+                    <p>Avaliação técnica completa da aeronave antes da aquisição. Inclui inspeção estrutural, revisão de
+                        logbooks, avaliação de corrosão, testes de sistemas e relatório detalhado com parecer técnico.
+                    </p>
+                    <div>
+                        <span class="norm-tag">AC 20-106</span>
+                        <span class="norm-tag">RBAC 91</span>
+                        <span class="norm-tag">AMM Lanceair</span>
+                    </div>
+                    <img src="assets/estrutura/estrutura-sala-controle-starter.webp" alt="Sala de Controle"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Sticky -->
+        <div class="sidebar-sticky">
+            <div class="sidebar-form">
+                <h3><i class="fas fa-paper-plane" style="color: var(--cyan-aero); margin-right: 8px;"></i> Orçamento
+                    Rápido</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="sb-name">Nome</label>
+                        <input type="text" id="sb-name" placeholder="Seu nome" class="contact-form">
+                    </div>
+                    <div class="form-group">
+                        <label for="sb-phone">WhatsApp</label>
+                        <input type="tel" id="sb-phone" placeholder="(11) 99999-9999" class="contact-form">
+                    </div>
+                    <div class="form-group">
+                        <label for="sb-service">Serviço</label>
+                        <select id="sb-service" class="contact-form">
+                            <option value="">Selecione...</option>
+                            <option value="sg">Starter Generator</option>
+                            <option value="bat">Baterias</option>
+                            <option value="ndt">Ensaios NDT</option>
+                            <option value="mech">Mecânicos</option>
+                            <option value="avionics">Aviônicos</option>
+                            <option value="insp">Inspeção Pré-Compra</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; justify-content: center; padding: 0.8rem;">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Final -->
+    <div class="cta-final">
+        <h2>Precisa de Suporte <span style="color: var(--cyan-aero);">Imediato?</span></h2>
+        <p>Nossa linha AOG está disponível 24 horas por dia, 7 dias por semana, 365 dias por ano.</p>
+        <div class="cta-buttons">
+            <a href="tel:+5511995849038" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> +55 11
+                99584-9038</a>
+            <a href="https://wa.me/5511995849038?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20MRO%20para%20minha%20aeronave%20Lanceair."
+                class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>
+                WhatsApp AOG</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        style="background-color: #050812; padding: 4rem 2rem 2rem; border-top: 1px solid var(--glass-border); position: relative;">
+        <div style="position: absolute; top: -1px; left: 0; width: 100%; height: 3px; background: var(--cyan-aero);">
+        </div>
+        <div
+            style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 3rem;">
+            <div style="flex: 1; min-width: 300px;">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <i class="fas fa-plane-up"></i> LANCEAIR <span>BRASIL</span> MRO
+                </a>
+                <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">Centro de
+                    excelência em manutenção aeronáutica. Reparos nível componente homologados internacionalmente.</p>
+                <div class="mono-text"
+                    style="background: rgba(0, 174, 239, 0.05); border: 1px solid rgba(0, 174, 239, 0.2); padding: 1rem; border-radius: var(--br); color: #fff;">
+                    <strong style="color: var(--cyan-aero); display: block; margin-bottom: 0.5rem;">REGISTROS DE
+                        AUTORIDADE</strong>
+                    ANAC COM: 200601-05<br>
+                    EASA PART-145: 145.0924
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 250px;">
+                <h4 style="margin-bottom: 1.5rem; color: #fff;">AOG e Contato Operacional</h4>
+                <div class="mono-text" style="color: #F4F6F9; display:flex; flex-direction:column; gap:1.2rem;">
+                    <div>
+                        <span style="color: #94a3b8; font-size: 0.75rem; display: block; margin-bottom: 0.2rem;">LINHA
+                            DE EMERGÊNCIA AOG (24/7)</span>
+                        <a href="tel:+5511995849038" style="color: #fff; text-decoration: none;"><i
+                                class="fas fa-phone-alt" style="color: var(--cyan-aero); width: 20px;"></i> +55 11
+                            99584-9038</a>
+                    </div>
+                    <div>
+                        <span style="color: #94a3b8; font-size: 0.75rem; display: block; margin-bottom: 0.2rem;">SUPORTE
+                            TÉCNICO</span>
+                        <a href="mailto:celio@lanceair.com.br" style="color: #fff; text-decoration: none;"><i
+                                class="fas fa-envelope" style="color: var(--cyan-aero); width: 20px;"></i>
+                            celio@lanceair.com.br</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1200px; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: #64748b; font-size: 0.85rem; font-family: var(--font-mono);">
+            &copy; 2026 LANCEAIR BRASIL MRO. TODOS OS DIREITOS RESERVADOS.
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Accordion toggle
+        document.querySelectorAll('.accordion-header').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const body = btn.nextElementSibling;
+                const isOpen = body.classList.contains('open');
+
+                // Close all
+                document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+                document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('open'));
+
+                if (!isOpen) {
+                    body.classList.add('open');
+                    btn.classList.add('open');
+                }
+            });
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
